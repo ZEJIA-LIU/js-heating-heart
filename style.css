@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#heart{
+    display: inline-block;
+    margin: 100px;
+    position: relative;
+    animation: xx 1000ms linear infinite alternate paused;
+    
+}
+@keyframes xx{
+    0%{
+        transform: scale(1)
+    }
+    100%{
+        transform: scale(1.5)
+    }
+}
+
+#heart>div{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background:red;
+}
+.bottom{
+    transform: rotate(45deg);
+}
+.left{bottom: 100%;
+    left: -50px;
+    transform: rotate(45deg) translateX(31px);
+    border-radius: 50% 0 0 50%;
+ 
+}
+
+.right{
+    bottom: 100%;
+    left: 50px;transform: rotate(45deg) translateY(31px);
+    border-radius: 50% 50% 0 0;
+}
+#start{
+    margin-left: 50px;
+}
